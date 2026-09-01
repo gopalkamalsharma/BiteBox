@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: auto;
+}
+/* Sub-logo styling  class-selector*/
+.sub-logo {
+    color: red;
+    font-size: 20px;
+}
+
+/* element selector */
+h1 a span{
+    color: green;
+}
+
+/* id selector */
+#brand{
+color: blue;
+}
