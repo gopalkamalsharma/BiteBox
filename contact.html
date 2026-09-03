@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BiteBox - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/37d1147389.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <h1><a class="navbar-brand" href="index.html">Bite<span style="color:red;">Box</span></a></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="bitedeals.html">Bite Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="cart.html"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="login.html"><i
+                                        class="fa-solid fa-right-to-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1>Customer Registration & Order Form</h1>
+    <form method="post" action="submit_order.jsp">
+        <h3>Customer Information</h3>
+            <table>
+                <tr>
+                    <td><label for="fullname" class="Required">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required></td>
+                </tr>
+            <tr>
+                <td><label for="email" class="Required">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password" class="Required">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone" class="Required">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        <h3>Order Information</h3>
+        <table>
+            <tr>
+                <td><label for="Quantity" class="Required">Quantity:</label></td>
+                <td><input type="number" id="Quantity" name="Quantity" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="DeliveryDate" class="Required">Delivery Date:</label></td>
+                <td><input type="date" id="DeliveryDate" name="DeliveryDate" required></td>
+            </tr>
+            <tr>
+                <td><label for="food" class="Required">Select Food:</label></td>
+                <td>
+                    <select id="food" name="food" class="form-select" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="burger">Burger</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="deserts">Deserts</option>
+                        <option value="beverages">Beverages</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <h3> Payment Method </h3>
+        <table>
+            <tr>
+                <td><label for="payment" class="Required">Select Payment Method:</label></td>
+                <td>
+                    <!-- cc - Credit Card -->
+                    <input type="radio" id="creditcard" name="payment" value="cc" required>
+                    <label for="creditcard">Credit Card</label><br>
+                    <!-- dc - Debit Card -->
+                    <input type="radio" id="debitcard" name="payment" value="dc" required>
+                    <label for="debitcard">Debit Card</label><br>
+                    <!-- cash - Cash on Delivery -->
+                    <input type="radio" id="cash" name="payment" value="cash" required>
+                    <label for="cash">Cash on Delivery</label>
+                </td>
+            </tr>
+        </table>
+
+        <h3> Extras </h3>
+        <table>
+            <tr>
+                <td><label for="extras">Select Extras:</label></td>
+                <td>
+                    <input class="form-check-input" type="checkbox" id="cheese" name="extras" value="cheese">
+                    <label class="form-check-label" for="cheese">Extra Cheese</label><br>
+                    <input class="form-check-input" type="checkbox" id="sauce" name="extras" value="sauce">
+                    <label class="form-check-label" for="sauce">Extra Sauce</label><br>
+                    <input class="form-check-input" type="checkbox" id="toppings" name="extras" value="toppings">
+                    <label class="form-check-label" for="toppings">Extra Toppings</label><br>
+                </td>
+            </tr>
+        </table>
+        <h3>Delivery Instructions </h3>
+        <table>
+            <tr>
+                <td><label for="delivery">Delivery Instructions:</label></td>
+                <div class="mb-3">
+  <label for="delivery" class="form-label">Delivery Instruction</label>
+  <textarea class="form-control" id="delivery" rows="3"></textarea>
+</div>
+            </tr>
+            <tr>
+                <td><input class="btn btn-primary" type="submit" value="Submit Order"></td>
+                <td><input class="btn btn-secondary" type="reset" value="Reset Form"></td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <p>© 2026 BiteBox. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
