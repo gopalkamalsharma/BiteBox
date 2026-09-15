@@ -23,6 +23,10 @@
     border-bottom: 1px solid #ff6b00;
 }
 
+.navbar-collapse{
+    flex-grow: 0;
+}
+
 .nav-link:active {
     border-bottom: 1px solid #ff6b00;
     font-size: 18px;

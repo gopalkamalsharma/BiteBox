@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:start; 
+            align-items: center;  
+            height: 100vh;
+        }
+        .element{
+            border: 1px solid black;
+        }
+        .element:hover{
+            
+            flex-basis: 20%;
+            text-align: center;
+            align-self: flex-start;
+        }
+       
+    </style>
 </head>
+
 <body>
-    <video src="assets/videos/sample.mp4" controls autoplay muted loop>
-</video>
-<button id="playPauseBtn">Pause</button>
-<h2>Video Tags</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xA804pkXI2w?si=p2dUBdBeY5V6Zikr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
+        <div class="element item1">Element 1</div>
+        <div class="element item2">Element 2</div>
+        <div class="element item3">Element 3</div>
+        
+    </div>
 </body>
+
 </html>
