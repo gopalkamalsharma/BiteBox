@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            display:flex;
+            border: 1px solid black;
+            /* flex-direction: row-reverse; */
+            justify-content:space-evenly;
+            height: 50vh;
+            align-items:stretch;
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+            
+        }
+        .border{
+            border: 1px solid black;
+            align-content: space-around;
+            
+        }
+        .element1{
+            order: 1;
+        }
+        .element3{
+            order: 2;
+        }
+        .border:hover{
+             align-self:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border element1">
+            
+            Element1
+            
+
+        </div>
+        <div class="border element2">Element2</div>
+        <div class="border element3">Element3</div>
+    </div>
+</body>
+</html>
