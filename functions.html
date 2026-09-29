@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
 </head>
+
 <body>
     <script>
         // function greet(name, age, location){
@@ -19,23 +21,72 @@
         // console.log(fullName.slice(0,5));
         // console.log(fullName.substring(6,7));
 
-        let a = ["Gopal", 25, "Kalyan"];
-        console.log("Original Array: " + a);
-        console.log("My name is: " + a[0] + " Age: " + a[1] + " Location: " + a[2]);
-        a.push("DevOps Engineer");
-        console.log(a);
-        a.pop();
-        console.log(a);
-        a.splice(2, 0, "FullStack");
-        console.log(a);
+        // let a = ["Gopal", 25, "Kalyan"];
+        // console.log("Original Array: " + a);
+        // console.log("My name is: " + a[0] + " Age: " + a[1] + " Location: " + a[2]);
+        // a.push("DevOps Engineer");
+        // console.log(a);
+        // a.pop();
+        // console.log(a);
+        // a.splice(2, 0, "FullStack");
+        // console.log(a);
+
+
+        // const d = new Date();
+        // console.log(d);
+        // console.log(d.getDay());
+
+        // let increament = 3000;
+        // function income(salary) {
+
+        //     let total = salary * 2;
+        //     return total;
+
+        // }
+        // let salary = income(30000); // first-class funtion
+        // console.log(salary);
+
+        // function repeat(action, times) {
+        //     for (i = 0; i < times; i++) {
+        //         action();
+        //     }
+        //     return "exited successfully";
+        // }
+
+        // function sayHello() {
+
+        //     console.log("Hello!");
+
+        // }
+
+        // let result = repeat(sayHello, 5);
+        // console.log(result)
+
+
+        // function greet(name, age){
+        //     return `Hello, ${name} and you are ${age} years old.`;
+        // }
+        // let result = greet("Gopal", 30);
+        // console.log(result);
+
+        // const greet = (name = "John", age = 25) => { return `Hello, ${name} and you are ${age} years old.`; }
+        // console.log(greet("Gopal", 30));
+
+        (function (name){
+            console.log(name);
+        })
+        ("gopal");
+
+        let num = 123.4567;
+        console.log(num.toFixed(2));
+        console.log(num.toPrecision(4));
+        console.log(Math.round(num));
+        console.log(Math.floor(num));
+        console.log(Math.ceil(num));
+
         
 
-        const d = new Date();
-        console.log(d);
-        console.log(d.getDay());
-
-
-        
     </script>
 </body>
+
 </html>
